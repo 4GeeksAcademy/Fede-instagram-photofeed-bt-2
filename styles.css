@@ -1,0 +1,13 @@
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0.5rem;
+}
+
+span {
+    position: relative;
+    top: 2rem;
+}
+.post-img img {
+    width: 100%;
+}
