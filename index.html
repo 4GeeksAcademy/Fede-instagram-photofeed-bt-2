@@ -10,36 +10,44 @@
 </head>
 <body>
     <div class="navbar p-2 bg-secondary-subtle">
-        <div>
+                        <!-- logo -->
+        <div> 
             <i class="fa-brands fa-instagram"></i>
             Instagram    
         </div>
         <div class="navbar-rigth d-inline-flex">
-                        <!-- Button trigger modal -->
+                         <!-- Button trigger modal -->
             <button type="button" class="btn btn-success m-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 Create a new post
             </button>
-            
                             <!-- Modal -->
             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="mb-3">
+                                <label for="message-text" class="col-form-label">Caption:</label>
+                                <textarea class="form-control" id="message-text"></textarea>
+                              </div>
+                              <div>
+                                <button type="button" class="btn btn-light"><i class="fa-solid fa-camera"></i></button>
+                                <button type="button" class="btn btn-light"><i class="fa-solid fa-location-dot"></i></button>
+                              </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-success">Publish</button>
+                        </div>
                     </div>
-                    <div class="modal-body">
-                    ...
-                    </div>
-                    <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-success">Publish</button>
-                    </div>
-                </div>
                 </div>
             </div>
-            <div class="dropdown m-1">
-                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <!-- dropdown    <i class="fa-solid fa-gear"></i>--> 
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle m-1" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                     <i class="fa-solid fa-gear"></i>
                 </button>
                 <ul class="dropdown-menu">
@@ -65,38 +73,38 @@
         <div class="tab-content" id="pills-tabContent">
             <!-- esto es el apartado de GRID -->
             <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
-                <div class="container text-center">
-                    <div class="row justify-content-center m-2">
-                        <div class="col-md-4">
-                            <img src="https://picsum.photos/seed/1/300/300" alt="" style="width: 100%;">
+                <div class="container">
+                    <div class="row g-2 p-1">
+                        <div class="col-4">
+                            <img src="https://picsum.photos/seed/1/300/300" alt="">
                         </div>
-                        <div class="col-md-4">
-                            <img src="https://picsum.photos/seed/10/300/300" alt="" style="width: 100%;">
+                        <div class="col-4">
+                            <img src="https://picsum.photos/seed/10/300/300" alt="">
                         </div>
-                        <div class="col-md-4">
-                            <img src="https://picsum.photos/seed/18/300/300" alt="" style="width: 100%;">
-                        </div>
-                    </div>
-                    <div class="row justify-content-center m-2">
-                        <div class="col-md-4">
-                            <img src="https://picsum.photos/seed/3/300/300" alt="" style="width: 100%;">
-                        </div>
-                        <div class="col-md-4">
-                            <img src="https://picsum.photos/seed/40/300/300" alt="" style="width: 100%;">
-                        </div>
-                        <div class="col-md-4">
-                            <img src="https://picsum.photos/seed/35/300/300" alt="" style="width: 100%;">
+                        <div class="col-4">
+                            <img src="https://picsum.photos/seed/18/300/300" alt="">
                         </div>
                     </div>
-                    <div class="row justify-content-center m-2">
-                        <div class="col-md-4">
-                            <img src="https://picsum.photos/seed/25/300/300" alt="" style="width: 100%;">
+                    <div class="row g-2 p-1">
+                        <div class="col-4">
+                            <img src="https://picsum.photos/seed/3/300/300" alt="">
                         </div>
-                        <div class="col-md-4">
-                            <img src="https://picsum.photos/seed/30/300/300" alt="" style="width: 100%;">
+                        <div class="col-4">
+                            <img src="https://picsum.photos/seed/40/300/300" alt="">
                         </div>
-                        <div class="col-md-4">
-                            <img src="https://picsum.photos/seed/20/300/300" alt="" style="width: 100%;">
+                        <div class="col-4">
+                            <img src="https://picsum.photos/seed/35/300/300" alt="">
+                        </div>
+                    </div>
+                    <div class="row g-2 p-1">
+                        <div class="col-4">
+                            <img src="https://picsum.photos/seed/25/300/300" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img src="https://picsum.photos/seed/30/300/300" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img src="https://picsum.photos/seed/20/300/300" alt="">
                         </div>
                     </div>
                 </div>
